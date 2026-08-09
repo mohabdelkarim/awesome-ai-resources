@@ -31,10 +31,6 @@ Built for:
 3. Prefer official / open content (no paywalled dumps, no shady mirrors)
 4. Links are auto-checked **every Thursday**; broken ones are repaired or flagged
 
-<p align="center">
-  <img src="assets/roadmap.svg" alt="Learning roadmap" width="100%">
-</p>
-
 ---
 
 ## Table of contents
