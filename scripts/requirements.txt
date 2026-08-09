@@ -1,0 +1,2 @@
+# Optional helper for local runs; GitHub Actions uses the system CA store.
+certifi>=2024.0.0

@@ -1,0 +1,74 @@
+name: Link Health
+
+on:
+  schedule:
+    # Every Thursday at 09:00 UTC
+    - cron: "0 9 * * 4"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  link-health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Check and repair links
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: llama-3.3-70b-versatile
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REPO_URL: https://github.com/mohabdelkarim/awesome-ai-resources
+        run: python scripts/check_and_repair_links.py
+
+      - name: Commit repairs as repository owner
+        env:
+          GIT_AUTHOR_NAME: ${{ secrets.GIT_AUTHOR_NAME }}
+          GIT_AUTHOR_EMAIL: ${{ secrets.GIT_AUTHOR_EMAIL }}
+          GIT_COMMITTER_NAME: ${{ secrets.GIT_AUTHOR_NAME }}
+          GIT_COMMITTER_EMAIL: ${{ secrets.GIT_AUTHOR_EMAIL }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${GIT_AUTHOR_NAME}" ] || [ -z "${GIT_AUTHOR_EMAIL}" ]; then
+            echo "GIT_AUTHOR_NAME and GIT_AUTHOR_EMAIL secrets are required."
+            exit 1
+          fi
+
+          git config user.name "${GIT_AUTHOR_NAME}"
+          git config user.email "${GIT_AUTHOR_EMAIL}"
+
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          repaired=$(grep -c 'Status: `repaired`' link-health-report.md 2>/dev/null || true)
+          unresolved=$(grep -c 'Status: `unresolved`' link-health-report.md 2>/dev/null || true)
+          repaired=${repaired:-0}
+          unresolved=${unresolved:-0}
+
+          git add README.md link-health-report.md
+          git commit -m "$(cat <<EOF
+          fix: repair ${repaired} dead links (weekly health check)
+
+          Unresolved: ${unresolved}. See link-health-report.md.
+          EOF
+          )"
+
+          git push
