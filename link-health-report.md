@@ -1,4 +1,4 @@
-# Link health report - 2026-08-09
+# Link report - 2026-08-09
 
 - Checked: **144**
 - Alive: **144**

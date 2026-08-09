@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Weekly link health: check README URLs, repair dead ones via Groq, notify Telegram."""
+"""Weekly link check: verify README URLs, repair dead ones via Groq, notify Telegram."""
 
 from __future__ import annotations
 
@@ -138,7 +138,7 @@ def replace_url(markdown: str, old_url: str, new_url: str) -> str:
 
 def write_report(path: Path, repairs: list[Repair], checked: int, alive: int) -> None:
     lines = [
-        f"# Link health report - {date.today().isoformat()}",
+        f"# Link report - {date.today().isoformat()}",
         "",
         f"- Checked: **{checked}**",
         f"- Alive: **{alive}**",
@@ -173,7 +173,7 @@ def build_telegram_message(
     repaired = [r for r in repairs if r.status == "repaired"]
     unresolved = [r for r in repairs if r.status == "unresolved"]
     lines = [
-        "Awesome AI Resources - Link Health",
+        "Awesome AI Resources - Link Check",
         f"Date: {date.today().isoformat()}",
         f"Checked: {checked}",
         f"Alive: {alive}",

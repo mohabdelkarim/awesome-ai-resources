@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Smoke-test local .env wiring: links, Groq, Telegram."""
+"""Smoke-test local .env wiring: link checks, Groq, Telegram."""
 
 from __future__ import annotations
 
@@ -86,7 +86,7 @@ def main() -> int:
     else:
         text = (
             "Awesome AI Resources smoke test\n"
-            "Link health Telegram wiring works.\n"
+            "Link check Telegram wiring works.\n"
             f"Repo: {os.environ.get('REPO_URL', 'https://github.com/mohabdelkarim/awesome-ai-resources')}"
         )
         data = urllib.parse.urlencode(

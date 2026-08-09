@@ -1,4 +1,4 @@
-name: Link Health
+name: Weekly Link Check
 
 on:
   schedule:
@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 jobs:
-  link-health:
+  link-check:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -65,7 +65,7 @@ jobs:
 
           git add README.md link-health-report.md
           git commit -m "$(cat <<EOF
-          fix: repair ${repaired} dead links (weekly health check)
+          fix: repair ${repaired} dead links (weekly link check)
 
           Unresolved: ${unresolved}. See link-health-report.md.
           EOF
