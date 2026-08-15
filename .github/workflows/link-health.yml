@@ -17,8 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           # Default GITHUB_TOKEN is enough to push when contents: write.
-          # Keep commits attributed to the repo owner via GIT_AUTHOR_* secrets below
-          # so Contributors stays Mohamed Abdelkarim only (never github-actions[bot]).
+          # Commits are attributed as MOHAbdelkarim (never github-actions[bot]).
           fetch-depth: 0
 
       - name: Set up Python
@@ -40,17 +39,12 @@ jobs:
 
       - name: Commit repairs as repository owner
         env:
-          GIT_AUTHOR_NAME: ${{ secrets.GIT_AUTHOR_NAME }}
-          GIT_AUTHOR_EMAIL: ${{ secrets.GIT_AUTHOR_EMAIL }}
-          GIT_COMMITTER_NAME: ${{ secrets.GIT_AUTHOR_NAME }}
-          GIT_COMMITTER_EMAIL: ${{ secrets.GIT_AUTHOR_EMAIL }}
+          GIT_AUTHOR_NAME: MOHAbdelkarim
+          GIT_AUTHOR_EMAIL: mohaabdelkarim2@gmail.com
+          GIT_COMMITTER_NAME: MOHAbdelkarim
+          GIT_COMMITTER_EMAIL: mohaabdelkarim2@gmail.com
         run: |
           set -euo pipefail
-
-          if [ -z "${GIT_AUTHOR_NAME}" ] || [ -z "${GIT_AUTHOR_EMAIL}" ]; then
-            echo "GIT_AUTHOR_NAME and GIT_AUTHOR_EMAIL secrets are required."
-            exit 1
-          fi
 
           git config user.name "${GIT_AUTHOR_NAME}"
           git config user.email "${GIT_AUTHOR_EMAIL}"
