@@ -305,7 +305,7 @@ See [contributing.md](contributing.md). Quick rules:
 
 Do **not** submit paywalled ebook dumps, cracked PDFs, or dead mirrors.
 
-More detail: [contributing.md](contributing.md) · follow up visibility checklist: [VISIBILITY.md](VISIBILITY.md)
+More detail: [contributing.md](contributing.md)
 
 ---
 
