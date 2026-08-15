@@ -22,7 +22,7 @@
   <rect x="48" y="48" width="1184" height="544" rx="28" fill="none" stroke="#29423a" stroke-width="2"/>
   <text x="640" y="190" class="kicker">GITHUB.COM/MOHABDELKARIM</text>
   <text x="640" y="280" class="title">Awesome AI Resources</text>
-  <text x="640" y="340" class="body">Roadmap-first free AI courses, books, tools, papers, labs</text>
+  <text x="640" y="340" class="body">Roadmap first free AI courses, books, tools, papers, labs</text>
   <rect x="340" y="380" width="600" height="4" rx="2" fill="#1d342d"/>
   <rect x="440" y="380" width="400" height="4" rx="2" fill="url(#accent)"/>
 

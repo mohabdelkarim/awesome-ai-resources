@@ -138,13 +138,13 @@ def replace_url(markdown: str, old_url: str, new_url: str) -> str:
 
 def write_report(path: Path, repairs: list[Repair], checked: int, alive: int) -> None:
     lines = [
-        f"# Link report - {date.today().isoformat()}",
+        f"# Link report: {date.today().isoformat()}",
         "",
-        f"- Checked: **{checked}**",
-        f"- Alive: **{alive}**",
-        f"- Dead found: **{len(repairs)}**",
-        f"- Repaired: **{sum(1 for r in repairs if r.status == 'repaired')}**",
-        f"- Unresolved: **{sum(1 for r in repairs if r.status == 'unresolved')}**",
+        f"* Checked: **{checked}**",
+        f"* Alive: **{alive}**",
+        f"* Dead found: **{len(repairs)}**",
+        f"* Repaired: **{sum(1 for r in repairs if r.status == 'repaired')}**",
+        f"* Unresolved: **{sum(1 for r in repairs if r.status == 'unresolved')}**",
         "",
     ]
     if not repairs:
@@ -154,11 +154,11 @@ def write_report(path: Path, repairs: list[Repair], checked: int, alive: int) ->
         lines.append("")
         for repair in repairs:
             lines.append(f"### L{repair.line}: {repair.title}")
-            lines.append(f"- Old: `{repair.old_url}`")
+            lines.append(f"* Old: `{repair.old_url}`")
             if repair.new_url:
-                lines.append(f"- New: `{repair.new_url}`")
-            lines.append(f"- Status: `{repair.status}`")
-            lines.append(f"- Notes: {repair.reason}")
+                lines.append(f"* New: `{repair.new_url}`")
+            lines.append(f"* Status: `{repair.status}`")
+            lines.append(f"* Notes: {repair.reason}")
             lines.append("")
     path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 

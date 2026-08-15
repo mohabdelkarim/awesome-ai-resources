@@ -18,7 +18,7 @@
   <rect width="1200" height="220" rx="20" fill="url(#bg)"/>
   <rect x="1" y="1" width="1198" height="218" rx="19" fill="none" stroke="#29423a"/>
   <text x="600" y="94" class="title">Awesome AI Resources</text>
-  <text x="600" y="126" class="body">A roadmap-first collection of high-signal AI courses, books, tools, papers, labs, and communities.</text>
+  <text x="600" y="126" class="body">A roadmap first collection of high-signal AI courses, books, tools, papers, labs, and communities.</text>
   <rect x="240" y="148" width="720" height="3" rx="2" fill="#1d342d"/>
   <rect x="410" y="148" width="380" height="3" rx="2" fill="url(#accent)"/>
 

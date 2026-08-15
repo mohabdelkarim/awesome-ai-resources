@@ -4,15 +4,15 @@ Thanks for helping keep this list high-signal and trustworthy.
 
 ## What belongs here
 
-- Resources that are **free or meaningfully freemium** and **legal** to access
-- Official docs, open textbooks, reputable courses, and maintained repos
-- Links that fit a clear spot on the learning roadmap or in Tools / Practice
+* Resources that are **free or meaningfully freemium** and **legal** to access
+* Official docs, open textbooks, reputable courses, and maintained repos
+* Links that fit a clear spot on the learning roadmap or in Tools / Practice
 
 ## What does not belong
 
-- Paywalled ebook dumps, cracked PDFs, or shady mirrors
-- Duplicate entries of something already listed
-- Pure marketing pages with no learning value
+* Paywalled ebook dumps, cracked PDFs, or shady mirrors
+* Duplicate entries of something already listed
+* Pure marketing pages with no learning value
 
 ## How to add a resource
 
@@ -21,7 +21,7 @@ Thanks for helping keep this list high-signal and trustworthy.
 3. Use this format:
 
    ```markdown
-   - [Name](https://example.com/): Short description ending with a period. `Beginner`
+   * [Name](https://example.com/): Short description ending with a period. `Beginner`
    ```
 
 4. Difficulty markers: `Beginner` · `Intermediate` · `Advanced` (optional `Editor's pick`)
