@@ -1,0 +1,52 @@
+name: Resource suggestion
+description: Suggest a free/legal AI learning resource for the list
+title: "[Resource]: "
+labels: ["resource-suggestion"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+      placeholder: e.g. Hugging Face NLP Course
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Best section
+      options:
+        - Foundations
+        - Machine learning
+        - Deep learning
+        - NLP and LLMs
+        - Agents and RAG
+        - Specialize and build
+        - Tools and APIs
+        - Practice and communities
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why add it?
+      description: One or two sentences. Confirm it is free/legal to access.
+    validations:
+      required: true

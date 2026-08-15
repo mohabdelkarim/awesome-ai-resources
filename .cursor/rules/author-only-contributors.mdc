@@ -1,0 +1,25 @@
+---
+description: Commits and GitHub Contributors must show only Mohamed Abdelkarim — never Cursor Agent or bots
+alwaysApply: true
+---
+
+# Author-only Contributors
+
+GitHub **Contributors** for this repo must show **only** the owner:
+
+- Name: `Mohamed Abdelkarim`
+- GitHub: `mohabdelkarim`
+- Email: `mohaabdelkarim2@gmail.com` (must match existing commits / GitHub account)
+
+## Required
+
+- Use the repo's existing local git `user.name` / `user.email` for every commit
+- Never add `Co-authored-by: Cursor`, `Co-authored-by: Cursor Agent`, or any AI/bot trailer
+- Never commit as `cursoragent`, `Cursor Agent`, `github-actions[bot]`, or similar identities when making local/agent commits
+- CI link-repair commits must keep `GIT_AUTHOR_*` / `GIT_COMMITTER_*` set to Mohamed Abdelkarim via repo secrets
+
+## Forbidden
+
+- Opening PRs from Cursor bot accounts so a second contributor appears
+- Changing global git config to an agent identity
+- Amending history solely to inject an agent co-author

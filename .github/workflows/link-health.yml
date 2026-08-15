@@ -16,7 +16,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GH_PAT }}
+          # Default GITHUB_TOKEN is enough to push when contents: write.
+          # Keep commits attributed to the repo owner via GIT_AUTHOR_* secrets below
+          # so Contributors stays Mohamed Abdelkarim only (never github-actions[bot]).
           fetch-depth: 0
 
       - name: Set up Python

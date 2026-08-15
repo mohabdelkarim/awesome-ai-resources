@@ -22,6 +22,10 @@ Built for:
 
 > Goal: cut noise, keep depth, and point only to resources you can actually open.
 
+### How this differs from other awesome AI lists
+
+Most lists dump links alphabetically. This one is a **learning roadmap** (Foundations → ML → Deep Learning → NLP/LLMs → Agents/RAG → Build), tags difficulty on every entry, and **auto-checks links every Thursday** so dead URLs get repaired or flagged.
+
 ---
 
 ## How to use this repository
@@ -33,10 +37,10 @@ Built for:
 
 ---
 
-## Table of contents
+## Contents
 
 - [Learning roadmap](#learning-roadmap)
-  - [Foundations](#foundations-python-math--ml-basics)
+  - [Foundations](#foundations-python-math-and-ml-basics)
   - [Machine learning](#machine-learning)
   - [Deep learning](#deep-learning)
   - [NLP and LLMs](#nlp-and-llms)
@@ -44,7 +48,7 @@ Built for:
   - [Specialize and build](#specialize-and-build)
 - [Tools and APIs](#tools-and-apis)
   - [Chat and coding assistants](#chat-and-coding-assistants)
-  - [Free / freemium LLM APIs](#free--freemium-llm-apis)
+  - [Free freemium LLM APIs](#free-freemium-llm-apis)
   - [Local AI](#local-ai)
   - [Frameworks and orchestration](#frameworks-and-orchestration)
   - [Embeddings and vector databases](#embeddings-and-vector-databases)
@@ -53,7 +57,8 @@ Built for:
   - [Hands-on labs and platforms](#hands-on-labs-and-platforms)
   - [Newsletters and reading](#newsletters-and-reading)
   - [Communities and forums](#communities-and-forums)
-- [Contributing](#contributing)
+
+See [contributing.md](contributing.md) for how to suggest or add resources.
 
 **Legend:** `Beginner` · `Intermediate` · `Advanced` · `Editor's pick`
 
@@ -61,7 +66,7 @@ Built for:
 
 # Learning roadmap
 
-## Foundations: Python, math & ML basics
+## Foundations: Python, math and ML basics
 
 ### Python for AI
 - [Python.org official tutorial](https://docs.python.org/3/tutorial/): Canonical language tour. `Beginner`
@@ -206,7 +211,7 @@ Built for:
 | GitHub Copilot | https://github.com/features/copilot | Free for eligible students / OSS |
 | Continue | https://www.continue.dev/ | Open-source coding assistant |
 
-## Free / freemium LLM APIs
+## Free freemium LLM APIs
 - [GroqCloud](https://console.groq.com/): Very fast OpenAI-compatible inference. `Beginner` `Editor's pick`
 - [Google AI Studio (Gemini API)](https://aistudio.google.com/): Free Gemini API key tier. `Beginner` `Editor's pick`
 - [OpenRouter](https://openrouter.ai/): Multi-model router with free models. `Beginner`
@@ -290,7 +295,7 @@ Built for:
 
 ## Contributing
 
-Contributions welcome. Keep the bar high:
+See [contributing.md](contributing.md). Quick rules:
 
 1. Resource must be **free or meaningfully freemium** and **legal** to access
 2. Prefer official docs, open textbooks, reputable courses, and maintained repos
@@ -299,6 +304,8 @@ Contributions welcome. Keep the bar high:
 5. Open a PR; weekly link checks will re-verify URLs every Thursday
 
 Do **not** submit paywalled ebook dumps, cracked PDFs, or dead mirrors.
+
+More detail: [contributing.md](contributing.md) · follow-up visibility checklist: [VISIBILITY.md](VISIBILITY.md)
 
 ---
 

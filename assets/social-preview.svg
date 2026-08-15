@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Awesome AI Resources">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1412"/>
+      <stop offset="55%" stop-color="#11201b"/>
+      <stop offset="100%" stop-color="#0e1a16"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7dffb3"/>
+      <stop offset="55%" stop-color="#3dd6c6"/>
+      <stop offset="100%" stop-color="#f0c75e"/>
+    </linearGradient>
+    <style>
+      .kicker { font: 600 22px 'Segoe UI', Arial, sans-serif; fill: #3dd6c6; text-anchor: middle; letter-spacing: 0.12em; }
+      .title { font: 700 64px 'Segoe UI', Arial, sans-serif; fill: #f4fff8; text-anchor: middle; }
+      .body { font: 400 26px 'Segoe UI', Arial, sans-serif; fill: #b8d5ca; text-anchor: middle; }
+      .chip { font: 600 16px 'Segoe UI', Arial, sans-serif; fill: #d8efe5; text-anchor: middle; }
+      .meta { font: 500 18px 'Segoe UI', Arial, sans-serif; fill: #7fa893; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect x="48" y="48" width="1184" height="544" rx="28" fill="none" stroke="#29423a" stroke-width="2"/>
+  <text x="640" y="190" class="kicker">GITHUB.COM/MOHABDELKARIM</text>
+  <text x="640" y="280" class="title">Awesome AI Resources</text>
+  <text x="640" y="340" class="body">Roadmap-first free AI courses, books, tools, papers, labs</text>
+  <rect x="340" y="380" width="600" height="4" rx="2" fill="#1d342d"/>
+  <rect x="440" y="380" width="400" height="4" rx="2" fill="url(#accent)"/>
+
+  <rect x="210" y="430" width="130" height="36" rx="18" fill="#132923"/>
+  <text x="275" y="453" class="chip">Foundations</text>
+  <rect x="360" y="430" width="160" height="36" rx="18" fill="#132923"/>
+  <text x="440" y="453" class="chip">Machine Learning</text>
+  <rect x="540" y="430" width="140" height="36" rx="18" fill="#132923"/>
+  <text x="610" y="453" class="chip">Deep Learning</text>
+  <rect x="700" y="430" width="130" height="36" rx="18" fill="#132923"/>
+  <text x="765" y="453" class="chip">NLP &amp; LLMs</text>
+  <rect x="850" y="430" width="140" height="36" rx="18" fill="#132923"/>
+  <text x="920" y="453" class="chip">Agents &amp; RAG</text>
+
+  <text x="640" y="530" class="meta">100+ curated links · verified weekly · MIT</text>
+</svg>
