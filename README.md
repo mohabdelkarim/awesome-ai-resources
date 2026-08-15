@@ -24,7 +24,7 @@ Built for:
 
 ### How this differs from other awesome AI lists
 
-Most lists dump links alphabetically. This one is a **learning roadmap** (Foundations → ML → Deep Learning → NLP/LLMs → Agents/RAG → Build), tags difficulty on every entry, and **auto-checks links every Thursday** so dead URLs get repaired or flagged.
+Most lists dump links alphabetically. This one is a **learning roadmap** (Foundations → ML → Deep Learning → NLP/LLMs → Agents/RAG → Build), tags difficulty on every entry, and **auto checks links every Thursday** so dead URLs get repaired or flagged.
 
 ---
 
@@ -33,7 +33,7 @@ Most lists dump links alphabetically. This one is a **learning roadmap** (Founda
 1. Follow the path: **Foundations > ML > Deep Learning > NLP/LLMs > Agents and RAG > Build**
 2. Pick one track at a time; you do **not** need every link
 3. Prefer official / open content (no paywalled dumps, no shady mirrors)
-4. Links are auto-checked **every Thursday**; broken ones are repaired or flagged
+4. Links are auto checked **every Thursday**; broken ones are repaired or flagged
 
 ---
 
@@ -54,7 +54,7 @@ Most lists dump links alphabetically. This one is a **learning roadmap** (Founda
   * [Embeddings and vector databases](#embeddings-and-vector-databases)
   * [Datasets and model hubs](#datasets-and-model-hubs)
 * [Practice and communities](#practice-and-communities)
-  * [Hands-on labs and platforms](#hands-on-labs-and-platforms)
+  * [Hands on labs and platforms](#hands-on-labs-and-platforms)
   * [Newsletters and reading](#newsletters-and-reading)
   * [Communities and forums](#communities-and-forums)
 
@@ -261,7 +261,7 @@ See [contributing.md](contributing.md) for how to suggest or add resources.
 
 # Practice and communities
 
-## Hands-on labs and platforms
+## Hands on labs and platforms
 * [Google Colab](https://colab.research.google.com/): Free GPU notebooks in the browser. `Beginner` `Editor's pick`
 * [Kaggle Notebooks](https://www.kaggle.com/code): Free notebooks + GPUs + datasets. `Beginner`
 * [Hugging Face Spaces](https://huggingface.co/spaces): Host demos for free. `Beginner`
@@ -299,13 +299,13 @@ See [contributing.md](contributing.md). Quick rules:
 
 1. Resource must be **free or meaningfully freemium** and **legal** to access
 2. Prefer official docs, open textbooks, reputable courses, and maintained repos
-3. Add a one-line description + difficulty marker (`Beginner` / `Intermediate` / `Advanced`, optional `Editor's pick`)
+3. Add a one line description + difficulty marker (`Beginner` / `Intermediate` / `Advanced`, optional `Editor's pick`)
 4. Place it in the correct roadmap / tools / practice section
 5. Open a PR; weekly link checks will re-verify URLs every Thursday
 
 Do **not** submit paywalled ebook dumps, cracked PDFs, or dead mirrors.
 
-More detail: [contributing.md](contributing.md) · follow-up visibility checklist: [VISIBILITY.md](VISIBILITY.md)
+More detail: [contributing.md](contributing.md) · follow up visibility checklist: [VISIBILITY.md](VISIBILITY.md)
 
 ---
 
