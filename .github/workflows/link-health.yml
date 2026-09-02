@@ -68,3 +68,30 @@ jobs:
           )"
 
           git push
+
+      - name: Slack weekly summary
+        if: success()
+        env:
+          SLACK_WEBHOOK_CONTENT: ${{ secrets.SLACK_WEBHOOK_CONTENT }}
+        run: |
+          if [ -z "$SLACK_WEBHOOK_CONTENT" ]; then exit 0; fi
+          repaired=$(grep -c 'Status: `repaired`' link-health-report.md 2>/dev/null || echo 0)
+          unresolved=$(grep -c 'Status: `unresolved`' link-health-report.md 2>/dev/null || echo 0)
+          python scripts/slack_notify.py --digest \
+            --title "awesome-ai-resources link check" \
+            --text "Repaired: ${repaired}\nUnresolved: ${unresolved}\nReport: link-health-report.md" \
+            --webhook-env SLACK_WEBHOOK_CONTENT
+
+      - name: Notify Slack on failure
+        if: failure()
+        uses: slackapi/slack-github-action@v4.0.0
+        with:
+          webhook: ${{ secrets.SLACK_WEBHOOK_ALERTS }}
+          webhook-type: incoming-webhook
+          payload: |
+            text: "CI failed: ${{ github.repository }} / ${{ github.workflow }}"
+            blocks:
+              - type: section
+                text:
+                  type: mrkdwn
+                  text: "*${{ github.repository }}* — `${{ github.workflow }}` failed\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View run>"
