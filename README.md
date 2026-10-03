@@ -170,6 +170,7 @@ See [contributing.md](contributing.md) for how to suggest or add resources.
 * [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/): Security risks for LLM apps. `Intermediate` `Editor's pick`
 * [Anthropic Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents): Practical agent design notes. `Intermediate` `Editor's pick`
 * [RAGAS](https://docs.ragas.io/): RAG evaluation framework. `Intermediate`
+* [Agent QA](https://github.com/vostride/agent-qa): Application QA agent for natural-language web and mobile regression tests with persistent test memory; the core is free, while configured AI providers may charge separately. `Intermediate`
 
 ---
 
