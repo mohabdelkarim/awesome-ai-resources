@@ -314,3 +314,9 @@ More detail: [contributing.md](contributing.md)
 Star the repo and share it with someone learning AI.
 
 Maintained by [mohabdelkarim](https://github.com/mohabdelkarim).
+
+
+## Hosted AI gateways
+
+* [APIClaw](https://apiclaw.biz): Flat-rate OpenAI-compatible AI API gateway for Claude, GPT, Kimi, Qwen, DeepSeek, and GLM models, with plans from $19/month and 50 free trial requests. `Intermediate`
+* 
