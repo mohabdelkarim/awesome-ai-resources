@@ -207,6 +207,7 @@ See [contributing.md](contributing.md) for how to suggest or add resources.
 | Claude | https://claude.ai/ | Free tier available |
 | Microsoft Copilot | https://copilot.microsoft.com/ | Free assistant in Edge/Windows |
 | Perplexity | https://www.perplexity.ai/ | Search-grounded answers |
+| StudyArena | https://studyarena.com | Compare three anonymous AI answers to a study question for free, then vote and reveal the models. `Beginner` |
 | Cursor | https://cursor.com/ | AI-first code editor |
 | GitHub Copilot | https://github.com/features/copilot | Free for eligible students / OSS |
 | Continue | https://www.continue.dev/ | Open-source coding assistant |
