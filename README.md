@@ -280,6 +280,8 @@ See [contributing.md](contributing.md) for how to suggest or add resources.
 * [Distill](https://distill.pub/): Visual ML explainers (classic archive). `Intermediate` `Editor's pick`
 * [Lil'Log (Lilian Weng)](https://lilianweng.github.io/): Deep dives on RL, agents, LLMs. `Advanced` `Editor's pick`
 * [Simon Willison's Weblog](https://simonwillison.net/): Practical LLM engineering notes. `Intermediate` `Editor's pick`
+* [AI Tools Radar Daily Brief](https://aitoolsradar.com/en/newsletter): Source-linked AI news, model releases, and product updates with a free public issue archive. `Beginner`
+
 
 ## Communities and forums
 * [r/MachineLearning](https://www.reddit.com/r/MachineLearning/): Large research/discussion subreddit. `Intermediate`
