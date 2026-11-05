@@ -1,14 +1,9 @@
-# Link report: 2026-10-29
+# Link report: 2026-11-05
 
 * Checked: **144**
-* Alive: **143**
-* Dead found: **1**
+* Alive: **144**
+* Dead found: **0**
 * Repaired: **0**
-* Unresolved: **1**
+* Unresolved: **0**
 
-## Details
-
-### L231: Hugging Face Transformers
-* Old: `https://huggingface.co/docs/transformers`
-* Status: `unresolved`
-* Notes: No Groq suggestion (HTTP Error 404: Not Found)
+All links healthy. No action needed.
