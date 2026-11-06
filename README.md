@@ -185,6 +185,7 @@ See [contributing.md](contributing.md) for how to suggest or add resources.
 * [Stable Diffusion web resources (Stability)](https://stability.ai/): Image generation ecosystem hub. `Intermediate`
 
 ### MLOps and production
+- [NextReset](https://nextreset.ai/) - Independent, source-linked Codex reset history and official AI incident references, with a browser-local personal timer; no private account access or timing guarantees.
 * [Made With ML](https://madewithml.com/): Production ML course (free). `Intermediate` `Editor's pick`
 * [Full Stack Deep Learning](https://fullstackdeeplearning.com/): Course on shipping ML systems. `Intermediate`
 * [Weights and Biases Docs](https://docs.wandb.ai/): Experiment tracking. `Beginner`
