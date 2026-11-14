@@ -104,6 +104,7 @@ See [contributing.md](contributing.md) for how to suggest or add resources.
 ### Practice
 * [Kaggle Competitions](https://www.kaggle.com/competitions): Real datasets and public notebooks. `Intermediate`
 * [OpenML](https://www.openml.org/): Open datasets and reproducible ML experiments. `Intermediate`
+* [Tiny ML Lab](https://github.com/RishabhPande/tiny-ml-lab): NumPy-only algorithm workbooks with reference implementations, numerical tests and failure-case exercises. `Intermediate`
 
 ---
 
