@@ -84,6 +84,7 @@ See [contributing.md](contributing.md) for how to suggest or add resources.
 * [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course): Free structured ML intro from Google. `Beginner` `Editor's pick`
 * [fast.ai Practical Deep Learning for Coders](https://course.fast.ai/): Top-down deep learning for practitioners. `Beginner` `Editor's pick`
 * [Elements of AI](https://www.elementsofai.com/): Non-technical AI literacy course. `Beginner`
+* [AI Knowledge Map](https://ai-knowledge-map.com/?lang=en): Interactive English/Chinese map of 130 AI concepts with a nine-stage learning path, concept explainers, and progress tracking. `Beginner`
 
 ---
 
