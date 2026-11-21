@@ -194,6 +194,7 @@ See [contributing.md](contributing.md) for how to suggest or add resources.
 * [Hugging Face Jobs](https://huggingface.co/jobs): ML/AI job board. `Beginner`
 * [Machine Learning Interview (khangich)](https://github.com/khangich/machine-learning-interview): Curated ML system design and interview notes. `Intermediate`
 * [Chip Huyen ML interviews and systems](https://huyenchip.com/): Essays on ML systems and careers. `Intermediate` `Editor's pick`
+* [AI Interview Questions by Role (ai2hired)](https://ai2hired.org/interview-questions/): Free interview questions with model answers for 16 AI roles, from AI engineer to AI governance. `Beginner`
 
 ---
 
